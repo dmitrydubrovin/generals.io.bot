@@ -1,0 +1,22 @@
+{
+  "name": "BOT for generals.io",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.generals.io/*"
+      ],
+      "js": [
+        "background.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "/injected.js"
+  ]
+}
